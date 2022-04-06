@@ -8,7 +8,7 @@ export default function App() {
   const buttonHandler = () => {
     Zendrive.setup({
       driverId: "zd-rn-integration",
-      sdkKey: "RZgwNQ4iCjDzdO1pFxTZBijgAL3X98l7",
+      sdkKey: "",
     }).then((result) => {
       console.log(result)
     })
