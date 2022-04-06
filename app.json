@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "expo_zd_integration",
+    "slug": "expo_zd_integration",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "expo_zd_integration"
+}
