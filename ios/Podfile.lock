@@ -1,4 +1,7 @@
 PODS:
+  - AWSCore (2.23.5)
+  - AWSSQS (2.23.5):
+    - AWSCore (= 2.23.5)
   - boost-for-react-native (1.63.0)
   - DoubleConversion (1.1.6)
   - EXApplication (4.0.2):
@@ -287,7 +290,19 @@ PODS:
     - React-cxxreact (= 0.64.3)
     - React-jsi (= 0.64.3)
     - React-perflogger (= 0.64.3)
+  - RNZendrive (0.0.1):
+    - React
+    - ZendriveSDK
+  - SQLite.swift (0.12.2):
+    - SQLite.swift/standard (= 0.12.2)
+  - SQLite.swift/standard (0.12.2)
   - Yoga (1.14.0)
+  - ZendriveSDK (8.2.0):
+    - ZendriveSDK/Standard (= 8.2.0)
+  - ZendriveSDK/Standard (8.2.0):
+    - AWSCore (~> 2.23.2)
+    - AWSSQS (~> 2.23.2)
+    - SQLite.swift (~> 0.12.2)
 
 DEPENDENCIES:
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
@@ -328,11 +343,16 @@ DEPENDENCIES:
   - React-RCTVibration (from `../node_modules/react-native/Libraries/Vibration`)
   - React-runtimeexecutor (from `../node_modules/react-native/ReactCommon/runtimeexecutor`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
+  - RNZendrive (from `../node_modules/react-native-zendrive/ios`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
+  - ZendriveSDK (from `https://bitbucket.org/zendrive-root/zendrive_cocoapod.git`, tag `8.2.0`)
 
 SPEC REPOS:
   trunk:
+    - AWSCore
+    - AWSSQS
     - boost-for-react-native
+    - SQLite.swift
 
 EXTERNAL SOURCES:
   DoubleConversion:
@@ -407,10 +427,22 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/runtimeexecutor"
   ReactCommon:
     :path: "../node_modules/react-native/ReactCommon"
+  RNZendrive:
+    :path: "../node_modules/react-native-zendrive/ios"
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
+  ZendriveSDK:
+    :git: https://bitbucket.org/zendrive-root/zendrive_cocoapod.git
+    :tag: 8.2.0
+
+CHECKOUT OPTIONS:
+  ZendriveSDK:
+    :git: https://bitbucket.org/zendrive-root/zendrive_cocoapod.git
+    :tag: 8.2.0
 
 SPEC CHECKSUMS:
+  AWSCore: 609b7fbd59837525c818f3e8e3d42d3b427cadf6
+  AWSSQS: e60b27935d55eec8e155bc7ec265ea40ea7d353e
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
   DoubleConversion: cf9b38bf0b2d048436d9a82ad2abe1404f11e7de
   EXApplication: 54fe5bd6268d697771645e8f1aef8b806a65247a
@@ -448,8 +480,11 @@ SPEC CHECKSUMS:
   React-RCTVibration: c7f845861e79eae13dc1e8217a3cf47a3945b504
   React-runtimeexecutor: 493d9abb8b23c3f84e19ae221eeba92cadcb70dc
   ReactCommon: 8fea6422328e2fc093e25c9fac67adbcf0f04fb4
+  RNZendrive: 8459343004da9b63c50c401b0a6ad21dd19f5412
+  SQLite.swift: d2b4642190917051ce6bd1d49aab565fe794eea3
   Yoga: e6ecf3fa25af9d4c87e94ad7d5d292eedef49749
+  ZendriveSDK: 94d5e3b778cdfd4ca989b6fbddbb2984c3d01c01
 
-PODFILE CHECKSUM: e5973b42c01814055998dd626f21376ab1ee9b6f
+PODFILE CHECKSUM: 4924ff641ccd2314c0391c0ee278e24166bd81e3
 
 COCOAPODS: 1.11.2

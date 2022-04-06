@@ -15,6 +15,8 @@ target 'expozdintegration' do
     :path => config[:reactNativePath],
     :hermes_enabled => podfile_properties['expo.jsEngine'] == 'hermes'
   )
+ 
+  pod 'ZendriveSDK', :git => 'https://bitbucket.org/zendrive-root/zendrive_cocoapod.git',:tag => '8.2.0'
 
   # Uncomment to opt-in to using Flipper
   #
